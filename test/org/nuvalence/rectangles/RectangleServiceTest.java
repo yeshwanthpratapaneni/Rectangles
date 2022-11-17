@@ -8,6 +8,7 @@ import org.nuvalence.rectangles.result.IntersectionResult;
 import org.nuvalence.rectangles.service.RectangleService;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertNull;
 
 @RequiredArgsConstructor
 public class RectangleServiceTest {
@@ -20,6 +21,7 @@ public class RectangleServiceTest {
 
         IntersectionResult result = rectangleService.compareRectangle(r1, r2);
         assertEquals(IntersectionType.NO_INTERSECTION, result.getIntersectionType());
+        assertNull(result.getIntersectionPoints());
     }
 
     @Test
@@ -29,6 +31,7 @@ public class RectangleServiceTest {
 
         IntersectionResult result = rectangleService.compareRectangle(r1, r2);
         assertEquals(IntersectionType.INTERSECTION, result.getIntersectionType());
+        assertEquals(2, result.getIntersectionPoints().size());
     }
 
     @Test
@@ -38,6 +41,7 @@ public class RectangleServiceTest {
 
         IntersectionResult result = rectangleService.compareRectangle(r1, r2);
         assertEquals(IntersectionType.CONTAINMENT, result.getIntersectionType());
+        assertNull(result.getIntersectionPoints());
     }
 
     @Test
