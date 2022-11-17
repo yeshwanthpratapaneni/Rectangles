@@ -57,7 +57,7 @@ public class RectangleUtilImpl implements IRectangleUtil {
     }
 
     @Override
-    public boolean checkForBoundaryPoints(Set<Point> intersectedPoints, Rectangle r1, Rectangle r2) {
+    public boolean checkForBoundaryIntersection(Set<Point> intersectedPoints, Rectangle r1, Rectangle r2) {
         List<Point> list = new ArrayList<>(intersectedPoints);
 
         Point p1 = list.get(0);

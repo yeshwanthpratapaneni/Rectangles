@@ -1,5 +1,7 @@
 package org.nuvalence.rectangles;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.junit.Test;
 import org.nuvalence.rectangles.enums.IntersectionType;
@@ -10,7 +12,7 @@ import org.nuvalence.rectangles.service.RectangleService;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertNull;
 
-@RequiredArgsConstructor
+
 public class RectangleServiceTest {
     private RectangleService rectangleService = new RectangleService();
 

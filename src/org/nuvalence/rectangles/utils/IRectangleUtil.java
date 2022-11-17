@@ -9,5 +9,5 @@ public interface IRectangleUtil {
     Set<Point> generatePoints(Rectangle r);
     Set<Point> getIntersectionPoints(Set<Point> points1, Set<Point> points2);
     boolean isContained(Rectangle r1, Rectangle r2);
-    boolean checkForBoundaryPoints(Set<Point> intersectedPoints, Rectangle r1, Rectangle r2);
+    boolean checkForBoundaryIntersection(Set<Point> intersectedPoints, Rectangle r1, Rectangle r2);
 }

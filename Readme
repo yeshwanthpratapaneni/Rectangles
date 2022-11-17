@@ -10,8 +10,8 @@ Approach :
 we can deduce which type of adjacent intersection exists between them
 
 Project Setup :
-1. I have used Junit and Lombok with this project. Please refer to the pom.xml
+1. This project is setup using Junit and Lombok. Please refer to the dependecies in pom.xml
 
 Testing steps :
-1. I have written various Junit cases covering each aspect of the rectangle overlap scenario and are available under the test directory.
+1. Various Junit cases are created for each aspect of the rectangle overlap scenario and are available under the test directory.
 

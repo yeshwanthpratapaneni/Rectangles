@@ -22,7 +22,7 @@ public class Point {
 
     @Override
     public int hashCode() {
-        int tmp = ( y +  ((x+1)/2));
-        return x +  ( tmp * tmp);
+        int res = ( y +  ((x+1)/2));
+        return x +  ( res * res);
     }
 }
