@@ -1,0 +1,17 @@
+Description : The following project compares two rectangles and finds if there's an overlap between them if so what kind of overlap exists between them
+
+Approach :
+1. Each rectangle is given 4 points x1,y1,x2,y2 and these points denote the bottom left and top right corners of the rectangle
+2. For each rectangle generate all the points that form the rectangle
+3. From the generated points from both r1 and r2 we take the intersection of the points between them
+4. If the intersection points is 0 this implies either there's no intersection or one rectangle completely contains the other one
+5. If the intersection points size is only 2 this implies a regular intersection.
+7. If the intersection points size is greater than 2 this implies a adjacent intersection and based on the intersection size
+we can deduce which type of adjacent intersection exists between them
+
+Project Setup :
+1. I have used Junit and Lombok with this project. Please refer to the pom.xml
+
+Testing steps :
+1. I have written various Junit cases covering each aspect of the rectangle overlap scenario and are available under the test directory.
+
