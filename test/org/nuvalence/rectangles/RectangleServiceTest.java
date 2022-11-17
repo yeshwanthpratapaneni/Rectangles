@@ -1,3 +1,5 @@
+package org.nuvalence.rectangles;
+
 import lombok.RequiredArgsConstructor;
 import org.junit.Test;
 import org.nuvalence.rectangles.enums.IntersectionType;
